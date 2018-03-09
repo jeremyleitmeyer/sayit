@@ -1,0 +1,54 @@
+body {
+  width: 80%;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(253, 253, 234);
+  width: 100%;
+}
+
+.banner-content {
+  font-size: 5rem;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.push {
+  margin-top: 80px;
+}
+
+.say-form{
+  text-align: center;
+}
+
+.say-form textarea {
+  resize: none;
+  width: 30%;
+}
+
+.form-control{
+  margin: 0 auto;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.say-box {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  font-size: 2.5rem;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+.say-text {
+  overflow-wrap: break-word;
+}
