@@ -1,0 +1,39 @@
+{
+  "name": "sayit",
+  "version": "1.0.0",
+  "description": "A small app for posting anonymous blurbs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyleitmeyer/sayit.git"
+  },
+  "keywords": [
+    "say",
+    "it",
+    "blurb",
+    "app",
+    "node",
+    "express",
+    "ejs"
+  ],
+  "author": "Jeremy Leitmeyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremyleitmeyer/sayit/issues"
+  },
+  "homepage": "https://github.com/jeremyleitmeyer/sayit#readme",
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.4",
+    "npm": "^5.7.1"
+  }
+}
