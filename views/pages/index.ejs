@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/necolasreset.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -23,7 +24,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-
+        <p>Field cannot be empty.</p>
         <form class="say-form" id="say" action="/say" method="POST">
 
         <textarea form="say" class="form-control" id="say-input" rows="5" placeholder="Say something !" name="say" autofocus></textarea>
@@ -33,7 +34,10 @@
       </div>
     </div>
   </div>
-
+  <section class="info-box hidden">
+    <h1>Say something !</h1>
+    <p> Say it is an anonymous chat board where you can say whatever you want to the world! (As long as its appropriate of course!) What will you say? Something about your day? World views? Do you have a cat you love talking about?! This is your place to share it !</p>
+  </section>
 
   <section class="says">
     <% for(var i=0; i<says.length; i++) {%>

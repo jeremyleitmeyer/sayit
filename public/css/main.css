@@ -1,6 +1,7 @@
 body {
     width: 90%;
-    background-color: rgb(250, 193, 212);
+    font-family: 'Mina', sans-serif;
+    background-color: rgb(255, 217, 229);
 }
 
 .modal {
@@ -10,8 +11,9 @@ body {
 }
 
 .modal-content {
+    height: 230px;
+    padding: 15px;
     background-color: rgb(212, 246, 255);
-
 }
 
 .hidden {
@@ -39,6 +41,7 @@ body {
     padding: 5px 5px;
     font-weight: 700;
     font-size: 15px;
+    height: 115px;
     letter-spacing: 2px;
     background-color: rgb(250, 193, 212);
     border: 2px #000 solid;
@@ -47,7 +50,7 @@ body {
     outline: 0;
     overflow: hidden;
     z-index: 1;
-    box-shadow: 2px rgba(212, 246, 255, 0.5)
+    box-shadow: 2px rgba(212, 246, 255, 0.5);
     cursor: pointer;
     transition: 1s ease-in;
     -o-transition: 1s ease-in;
@@ -81,10 +84,27 @@ body {
 }
 
 .question {
-    width: 5%;
-    float: right;
+    width: 4%;
     position: absolute;
-    right: 0;
+    right: 10px;
+    top: 27px;
+}
+
+.info-box {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 15px 120px 20px 120px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: rgb(244, 200, 255);
+    overflow-y: hidden;
+    max-height: 500px;
+}
+
+.info-box p {
+    font-size: 2rem;
 }
 
 .banner-content {
@@ -95,11 +115,11 @@ body {
 }
 
 .push {
-    margin-top: 9.5%;
+    margin-top: 9.4%;
 }
 
 .close {
-    margin: 3px;
+    margin: 5px;
     margin-right: 6px;
 }
 
@@ -120,6 +140,7 @@ body {
 .say-form button {
     margin: 5px;
     float: right;
+    height: 35px;
 }
 
 .says {
@@ -131,13 +152,15 @@ body {
     display: inline-grid;
     width: 250px;
     height: 250px;
-    padding: 20px;
-    font-size: 2rem;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
     margin: 10px;
     border: 2px solid black;
-    border-radius: 10px
+    border-radius: 10px;
+    overflow-wrap: break-word;
 }
 
 .say-text {
-    overflow-wrap: break-word;
+    word-break: break-all;
 }
