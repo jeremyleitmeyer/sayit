@@ -17,17 +17,25 @@
   <header>
     <% include ../partials/header %>
   </header>
+  <div class="modal hidden" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
 
-  <div>
-    <form class="say-form" id="say" action="/say" method="POST">
+        <form class="say-form" id="say" action="/say" method="POST">
 
-      <textarea form="say" class="form-control" id="say-input" rows="5" placeholder="Say something !" name="say" autofocus></textarea>
+        <textarea form="say" class="form-control" id="say-input" rows="5" placeholder="Say something !" name="say" autofocus></textarea>
 
-      <button class="btn btn-primary" type="submit">Submit</button>
-
-    </form>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
-  <div>
+
+
+  <section class="says">
     <% for(var i=0; i<says.length; i++) {%>
 
       <div class="say-box">
@@ -35,12 +43,12 @@
       </div>
 
     <% } %>
-  </div>
+  </section>
 
   <footer class="push">
     <span class="text-center text-muted">Jeremy Leitmeyer © Copyright 2018</span>
   </footer>
-  
+
   <script src="js/main.js"></script>
 </body>
 
